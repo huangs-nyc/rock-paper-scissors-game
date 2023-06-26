@@ -28,15 +28,35 @@ button {
     background-color: bisque;
     border: 5px solid gray;
     border-radius: 5px;
-    width: 150px;
+    width: 180px;
+    height: 75px;
     color: white;
     font-family: 'Press Start 2P', cursive, sans-serif;
     text-shadow: 1px 1px 0px black;
     text-align: center;
-    font-size: 15px;
+    font-size: 20px;
+}
+
+button:disabled {
+    color: black;
 }
 
 #rock-btn {
-    background-image: url(images/rock2.jpg);
-    background-size: 150px 55px;
+    background-image: url("images/rock2.jpg");
+    background-size: 170px 65px;
+}
+
+#paper-btn {
+    background-image: url("images/paper2.jpg");
+    background-size: cover;
+}
+
+#scissors-btn {
+    background-image: url("images/scissors3.jpg");
+    background-size: cover;
+    background-position: 10px;
+}
+
+#start-game {
+    color: black;
 }
