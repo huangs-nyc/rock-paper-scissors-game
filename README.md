@@ -1,2 +1,2 @@
-# rock paper scissors game
+# Rock, Papers, Scissors Game
  
