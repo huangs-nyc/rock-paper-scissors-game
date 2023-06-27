@@ -4,11 +4,12 @@ body {
 
 #main {
     background-color: rgb(232, 144, 157);
-    margin: 100px auto;
+    margin: 50px auto;
     width: 600px;
     height: 600px;
     border: 10px solid white;
     border-radius: 10px;
+    padding: 20px;
 }
 
 #header {
@@ -19,6 +20,27 @@ body {
     text-shadow: 0 0 3px black;
 }
 
+#stage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(47, 47, 47);
+    /* border and sizing */
+    border: 5px solid white;
+    border-radius: 5px;
+    width: 500px;
+    height: 200px;
+    margin: 25px auto;
+    box-shadow: 0 0 20px black;
+    /* text handling*/
+    color: white;
+    font-family: 'Press Start 2P', cursive, sans-serif;
+    font-size: 30px;
+    text-shadow: 0 0 3px black;
+    text-align: center;
+}
+
 .choice-btns {
     display: flex;
     justify-content: space-evenly;
@@ -26,7 +48,8 @@ body {
 
 button {
     background-color: bisque;
-    border: 5px solid gray;
+    box-shadow: -3px 3px #5D331B, -2px 2px #5D331B, -1px 1px #5D331B;
+    border: 1px solid #5D331B;
     border-radius: 5px;
     width: 180px;
     height: 75px;
@@ -38,25 +61,58 @@ button {
 }
 
 button:disabled {
-    color: black;
+    opacity: 0.6;
 }
 
 #rock-btn {
-    background-image: url("images/rock2.jpg");
-    background-size: 170px 65px;
+    background-image: url("images/rock.jpg");
+    background-size: 180px 75px;
 }
 
 #paper-btn {
-    background-image: url("images/paper2.jpg");
+    background-image: url("images/paper.jpg");
     background-size: cover;
 }
 
 #scissors-btn {
-    background-image: url("images/scissors3.jpg");
+    background-image: url("images/scissors.jpg");
     background-size: cover;
     background-position: 10px;
 }
 
+#rock-btn:hover, #paper-btn:hover, #scissors-btn:hover {
+    font-size: 21px;
+}
+
+#result {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+
+    color: white;
+    font-family: 'Press Start 2P', cursive, sans-serif;
+    font-size: 15px;
+    text-shadow: 0 0 3px black;
+    text-align: center;
+}
+
 #start-game {
-    color: black;
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+    background-color: rgb(55, 170, 55);
+    box-shadow: -3px 3px #5D331B, -2px 2px #5D331B, -1px 1px #5D331B;
+    border: 1px solid #5D331B;
+}
+
+#start-game:hover {
+    background-color: forestgreen;
+    border: none;
+    border-radius: 5px;
+}
+
+#rock-btn:active, #paper-btn:active, #scissors-btn:active, #start-game:active {
+    box-shadow: none;
+    transform: translate(-1px, 2px);
 }
